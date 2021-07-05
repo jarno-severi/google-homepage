@@ -1,0 +1,1 @@
+Ensimmäinen Odin projekti, jossa tarkoitus tehdä Googlen etusivu, jossa toimintojen ei tarvitse toimia, mutta sivun tulee näyttää vastaavalta kuin Googlen etusivu.
