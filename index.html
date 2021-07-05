@@ -1,51 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-
         <meta charset="UTF-8">
-
         <style>
-            html, body {
-                height: 100%;
+            div {
+                text-align: center;
+                padding: 12px;
+            }
+            .right {
+                text-align: right;
+            }
+            .navigation ul {
+                list-style-type: none;
                 margin: 0;
                 padding: 0;
             }
-
-            .search {
-                width: 584px;
-            }
-            
-            .nav {
-                display: flex;
-                justify-content: end;
-                height: 60px;
-                align-items: center;
-            }
-            .flex-container {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                height: 100%;
-            }
-            .div-padding {
-                padding-bottom: 20px;
-            }
-            ul {
-                list-style-type: none;
-            }
-            li {
+            .navigation li {
                 display: inline;
-                padding: 5px;
+            }
+            input {
+                width: 600px;
+                padding: 12px;
+                border-radius: 30px;
+                border-style: solid;
+                padding-left: 30px;
+                background-image: url('search_icon.svg');
+                background-repeat: no-repeat;
+                background-position: 12px center;
             }
         </style>
-
     </head>
     
 
     <body>
 
-        <nav class="nav">
+        <nav class="navigation right">
             <ul>
                 <li><a href="">Gmail</a></li>
                 <li><a href="">Images</a></li>
@@ -54,22 +43,33 @@
             </ul>
         </nav>
 
-        <div class="flex-container">
-            
-            <div class="div-padding">
+        <div>
+            <div>
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
             </div>
-            <div class="div-padding">
-                <input class="search" type="text" name="google-search">
+            <div>
+                <input type="text" name="search">
             </div>
-            <div class="div-padding">
+            <div>
                 <button>Google Search</button>
-                <button>I'm Feeling Lucky</button>
+            <button>I'm Feeling Lucky</button>
             </div>
-            <footer></footer>
+            <p>Google offered in: <a href="">suomi</a> <a href="">svenska</a></p>
         </div>
         
-        
+        <footer class="navigation">
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Business</a></li>
+                <li><a href="">How Search works</a></li>
+            </ul>
+            <ul class="right">
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Settings</a></li>
+            </ul>
+        </footer>
     </body>
 
 
