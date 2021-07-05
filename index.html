@@ -12,8 +12,14 @@
             }
 
             .search {
-                
                 width: 584px;
+            }
+            
+            .nav {
+                display: flex;
+                justify-content: end;
+                height: 60px;
+                align-items: center;
             }
             .flex-container {
                 display: flex;
@@ -25,15 +31,31 @@
             .div-padding {
                 padding-bottom: 20px;
             }
+            ul {
+                list-style-type: none;
+            }
+            li {
+                display: inline;
+                padding: 5px;
+            }
         </style>
 
     </head>
     
 
     <body>
-        
+
+        <nav class="nav">
+            <ul>
+                <li><a href="">Gmail</a></li>
+                <li><a href="">Images</a></li>
+                <li><a href="">Google apps</a></li>
+                <li><button>Sign in</button></li>
+            </ul>
+        </nav>
+
         <div class="flex-container">
-            <nav></nav>
+            
             <div class="div-padding">
                 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
             </div>
