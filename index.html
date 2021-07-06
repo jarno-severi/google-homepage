@@ -3,12 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <style>
+            html, body {
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
             div {
                 text-align: center;
-                padding: 12px;
+            }
+            a:link {
+                text-decoration: none;   
+            }
+            a:hover {
+                text-decoration: underline;
             }
             .right {
                 text-align: right;
+            }
+            .navigation {
+                padding: 16px;
             }
             .navigation ul {
                 list-style-type: none;
@@ -17,9 +30,10 @@
             }
             .navigation li {
                 display: inline;
+                padding: 0 5px;
             }
             input {
-                width: 600px;
+                width: 550px;
                 padding: 12px;
                 border-radius: 30px;
                 border-style: solid;
@@ -28,48 +42,92 @@
                 background-repeat: no-repeat;
                 background-position: 12px center;
             }
+            .flex-container {
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+            }
+            .flex-container > div {
+                flex: 1;
+            }
+            .container {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                background-color: #F5F5F5;
+                border-top-style: solid;
+                border-color: silver;
+                border-width: 1px;
+            }
+            .footer {
+                display: flex;
+                align-items: flex-end;
+            }
+
+            .footer a {
+                color: #808080;
+
+            }
+            .main > div {
+                padding: 12px;
+            }
+            .apps {
+                position: relative;
+                top: 4px;
+            }
         </style>
     </head>
     
 
     <body>
+        <div class="flex-container">
 
-        <nav class="navigation right">
-            <ul>
-                <li><a href="">Gmail</a></li>
-                <li><a href="">Images</a></li>
-                <li><a href="">Google apps</a></li>
-                <li><button>Sign in</button></li>
-            </ul>
-        </nav>
-
-        <div>
             <div>
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+                <nav class="navigation right">
+                    <ul>
+                        <li><a href="">Gmail</a></li>
+                        <li><a href="">Images</a></li>
+                        <li><a href=""><img src="apps-icon.svg" alt="Google apps" class="apps"></a></li>
+                        <li><button>Sign in</button></li>
+                    </ul>
+                </nav>
             </div>
-            <div>
-                <input type="text" name="search">
+    
+            <div class="main">
+                <div>
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
+                </div>
+                <div>
+                    <input type="text" name="search">
+                </div>
+                <div>
+                    <button>Google Search</button>
+                <button>I'm Feeling Lucky</button>
+                </div>
+                <p>Google offered in: <a href="">suomi</a> <a href="">svenska</a></p>
             </div>
-            <div>
-                <button>Google Search</button>
-            <button>I'm Feeling Lucky</button>
+            
+            <div class="footer">
+                <footer class="navigation container">
+                    <div>
+                        <ul>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Advertising</a></li>
+                            <li><a href="">Business</a></li>
+                            <li><a href="">How Search works</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li><a href="">Privacy</a></li>
+                            <li><a href="">Terms</a></li>
+                            <li><a href="">Settings</a></li>
+                        </ul>
+                    </div>
+                </footer>
             </div>
-            <p>Google offered in: <a href="">suomi</a> <a href="">svenska</a></p>
+            
         </div>
-        
-        <footer class="navigation">
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Advertising</a></li>
-                <li><a href="">Business</a></li>
-                <li><a href="">How Search works</a></li>
-            </ul>
-            <ul class="right">
-                <li><a href="">Privacy</a></li>
-                <li><a href="">Terms</a></li>
-                <li><a href="">Settings</a></li>
-            </ul>
-        </footer>
     </body>
 
 
